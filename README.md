@@ -3,7 +3,7 @@ Proyecto realizado por: `Codigo 369`
 
 - [Canal de Codigo 369: ](https://www.youtube.com/@Codigo369)
 
-- [Video iniciando el proyecto: ]https://youtu.be/0C5yFwOYhAk?si=DYycjYVJMEQHPyec&t=8793)
+- [Video iniciando el proyecto: ](https://youtu.be/0C5yFwOYhAk?si=DYycjYVJMEQHPyec&t=8793)
 
 
 # React + Vite
