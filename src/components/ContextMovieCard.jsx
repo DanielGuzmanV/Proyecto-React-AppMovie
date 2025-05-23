@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react"
 import get from "../data/httpClient";
 import MovieCard from "../components/MovieCard";
+import "../components/ContextMovieCard.css";
 
 const pathMovies = "/discover/movie";
 
 function ContextMovieCard() {
   const [movies, setMovies] = useState([]);
-  
+
   useEffect( () => {
 
     const fetchMovies = async function () {
@@ -18,7 +19,7 @@ function ContextMovieCard() {
   }, []);
 
   return (
-    <ul>
+    <ul className="container">
       {movies.map( (movieItem) => (
         < MovieCard  objMovie={movieItem}/>
       ))}
