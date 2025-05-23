@@ -1,7 +1,7 @@
 
 const API = "https://api.themoviedb.org/";
 
-export async function get1(path) {
+export async function get(path) {
   try {
     const response = await fetch(API + path, {
       headers: {

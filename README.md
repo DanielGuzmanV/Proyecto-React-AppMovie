@@ -5,6 +5,23 @@ Proyecto realizado por: `Codigo 369`
 
 - [Video iniciando el proyecto: ](https://youtu.be/0C5yFwOYhAk?si=DYycjYVJMEQHPyec&t=8793)
 
+# Instalaciones
+
+---
+Se uso la API de: 
+- [ThemovideDB](https://developer.themoviedb.org/docs/getting-started)
+
+- [Pagina principal de Themoviedb](https://www.themoviedb.org/)
+
+Esta API necesita un token de acceso para usarla, para obtenerla solo debemos registranos o iniciar sesion y pedir nuestro token de acceso
+---
+
+---
+- Se usao react routes, en la terminal pondremos:
+```bash
+  yarn add react-router-dom
+```
+---
 
 # React + Vite
 
