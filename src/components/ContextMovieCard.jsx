@@ -21,7 +21,7 @@ function ContextMovieCard() {
   return (
     <ul className="container">
       {movies.map( (movieItem) => (
-        < MovieCard  objMovie={movieItem}/>
+        < MovieCard  objMovie={movieItem} key= {movieItem.id}/>
       ))}
     </ul>
   )
