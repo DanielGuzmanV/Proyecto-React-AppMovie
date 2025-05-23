@@ -1,7 +1,7 @@
 
-const API = "https://api.themoviedb.org/";
+const API = "https://api.themoviedb.org/3";
 
-export async function get(path) {
+async function get(path) {
   try {
     const response = await fetch(API + path, {
       headers: {
@@ -21,6 +21,7 @@ export async function get(path) {
   }
 }
 
+export default get
 
 
 
