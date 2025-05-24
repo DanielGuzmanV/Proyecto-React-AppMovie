@@ -15,9 +15,9 @@ function MovieCard({objMovie}) {
           alt={objMovie.title}
           className="movieImage"
           />
-          <h3>{objMovie.title}</h3>
       
       </Link>
+          <div>{objMovie.title}</div>
 
     </li>
   )

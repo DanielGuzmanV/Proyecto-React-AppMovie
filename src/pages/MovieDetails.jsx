@@ -2,10 +2,11 @@ import { useParams } from "react-router-dom"
 import get from "../data/httpClient"
 import { useEffect, useState } from "react";
 import getMovieImg from "../utils/getMovieImg"
+import "../pages/MovieDetails.css"
 
 
 
-const MovieDetails = () => {
+function MovieDetails () {
   const {movieId} = useParams();
   const [movie, setMovies] = useState([]);
   const [genero, setGeneros] = useState([]);
@@ -22,10 +23,10 @@ const MovieDetails = () => {
   const imgUrl = getMovieImg( movie.poster_path, 500);
 
   return (
-    <div>
-      <img src={imgUrl} alt={movie.title}/>
-      <div>
-        <p>
+    <div className="detailsContainer">
+      <img className= "colum movieImg" src={imgUrl} alt={movie.title}/>
+      <div className="colum movieDetails">
+        <p className="title">
           <strong>Titulo: </strong>
           {movie.title}
         </p>
