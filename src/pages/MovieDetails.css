@@ -13,6 +13,7 @@
 
 .movieImg {
   border-radius: 15px;
+  object-fit: cover;
 }
 
 .title {

@@ -15,6 +15,10 @@
   border-radius: 10px;
 }
 
+.title {
+  color: rgb(181, 229, 202);
+}
+
 @media (max-width: 560px) {
   .movieImage {
     width: 90%;

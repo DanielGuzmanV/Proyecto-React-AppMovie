@@ -1,11 +1,11 @@
-import "../components/MovieCard.css"
+import style from "../components/MovieCard.module.css"
 import { Link } from "react-router-dom";
 
 function MovieCard({objMovie}) {
   const imageUrl = "https://image.tmdb.org/t/p/w300" + objMovie.poster_path;
 
   return (
-    <li className="movieCard">
+    <li className= {style.movieCard}>
 
       <Link to={"movies/"+objMovie.id}>
         <img
@@ -13,11 +13,11 @@ function MovieCard({objMovie}) {
           height={345}
           src={imageUrl}
           alt={objMovie.title}
-          className="movieImage"
+          className= {style.movieImage}
           />
       
       </Link>
-          <div>{objMovie.title}</div>
+          <div className={style.title}>{objMovie.title}</div>
 
     </li>
   )
