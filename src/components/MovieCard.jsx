@@ -7,7 +7,7 @@ function MovieCard({objMovie}) {
   return (
     <li className="movieCard">
 
-      <Link to={"/movies/"+objMovie.id}>
+      <Link to={"movies/"+objMovie.id}>
         <img
           width={230}
           height={345}
@@ -16,6 +16,7 @@ function MovieCard({objMovie}) {
           className="movieImage"
           />
           <h3>{objMovie.title}</h3>
+      
       </Link>
 
     </li>
