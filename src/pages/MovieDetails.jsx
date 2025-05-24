@@ -1,23 +1,46 @@
 import { useParams } from "react-router-dom"
 import get from "../data/httpClient"
 import { useEffect, useState } from "react";
+import getMovieImg from "../utils/getMovieImg"
+
 
 
 const MovieDetails = () => {
-  const {movieId} = useParams;
-  const [movie, setMovies] = useState(null);
+  const {movieId} = useParams();
+  const [movie, setMovies] = useState([]);
+  const [genero, setGeneros] = useState([]);
+  
   useEffect( () => {
     const fetchMovie = async function() {
       const response = await get("/movie/"+movieId);
-      return setMovies(response);
+      setMovies(response);
+      setGeneros(response.genres[0]);
     }
     fetchMovie();
-  }, [movieId]);
 
+  }, [movieId]);
+  const imgUrl = getMovieImg( movie.poster_path, 500);
 
   return (
     <div>
-      <img src={""}/>
+      <img src={imgUrl} alt={movie.title}/>
+      <div>
+        <p>
+          <strong>Titulo: </strong>
+          {movie.title}
+        </p>
+
+        <p>
+          <strong>Generos: </strong>
+          {genero.name}
+        </p>
+
+        <p>
+          <strong>Descripcion: </strong>
+          {movie.overview}
+        </p>
+
+      </div>
     </div>
   )
 }
